@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Audio } from "react-loader-spinner";
+import loaded from "react-loader-spinner";
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -36,19 +36,7 @@ export default function Weather() {
     </form>
   );
 
-  if (
-    (
-      <Audio
-        height="80"
-        width="80"
-        radius="9"
-        color="green"
-        ariaLabel="loading"
-        wrapperStyle
-        wrapperClass
-      />
-    )
-  ) {
+  if (loaded) {
     return (
       <div>
         {form}
