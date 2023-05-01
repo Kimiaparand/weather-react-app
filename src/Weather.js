@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import loaded from "react-loader-spinner";
+// eslint-disable-next-lineimport loaded from "react-loader-spinner";
 
 export default function Weather() {
   const [city, setCity] = useState("");
